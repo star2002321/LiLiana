@@ -1,0 +1,288 @@
+@media screen and (max-width: 727px) {
+    /*header的設定*/
+    header {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1000; /* 确保菜单在其他内容之上 */
+
+    }
+
+    /*header變化後的circle位置設定*/
+    .logo{
+        width: 20%;
+        margin: 25px;
+        
+        display: flex;
+        justify-content: center; /* 水平居中对齐 */
+    }
+    /*header的circle設定*/
+    .logo .circle1,.circle2{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: white;
+
+        margin-left: 15px;
+        
+    }
+
+
+    /*收放手機板的header用*/
+    header button.nav-button {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0;
+        cursor: pointer;
+    }
+    .nav-button img{
+        width: 30px;
+    }
+
+    /*header的按鈕群組設定*/
+    header ul {
+        margin: 0; padding: 0;
+        list-style: none;
+        display: flex;
+        /*改成直式*/        
+        flex-direction: column;
+
+        width: 100%;
+        margin-left: auto;
+        text-align: center;        
+    }
+
+    .hide {
+        /*初始時收起選單*/
+        display: none;
+    }
+    
+    /*header的文字樣式*/
+    header ul a {
+        /*header的文字樣式*/
+        font-size: 14px;
+        color: white;
+        font-weight: 400;
+        font-family: var(--secondary-font);
+        text-decoration: none;
+        line-height: 80px;
+
+        /*header按鈕的位置設定*/
+        width: 100%; height: 80px;
+    }
+
+    /*header的中文文字樣式*/
+    header ul a.portfolio {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    /*header的中文文字樣式*/
+    header ul a.how {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    header ul li:hover{
+        background-color: rgb(31, 31, 31);
+    }
+
+
+    /*main開場白 開始*/
+    main{
+        margin-top: 380px;
+        margin-left: 20px;
+    }
+
+    main h1{
+        font-family: 'Inika', serif;
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: 9px;
+    }
+    main h2{
+        font-family: 'Inika', serif;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 5px;
+
+        margin-top: 80px;
+        margin-left: 60px;
+    }
+    main p{
+        font-family: 'Inika', serif;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 4px;
+
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    /*main開場白 結束*/
+
+    /*作品呈現 開始*/
+    aside {
+        width: 50%;
+        display: flex;
+        /*改成直式*/        
+        flex-direction: column;
+
+        gap: 40px;
+        margin-top: 200px;
+        margin-left: auto;
+    }
+    .cardone {
+        width: 180px;
+    }
+    .cardone img {
+        width: 180px;
+    }
+
+
+    section {
+        display: none;
+    }
+
+
+    .three {
+        width: 50%;
+        display: flex;
+        /*改成直式*/        
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 50px;
+        margin-left: auto;
+    }
+    .cardthree img {
+        width: 180px;
+    }
+    /*作品呈現 結束*/
+
+    /*連結 開始*/
+    .link{
+        width: 1000px;/*與文字長度設定相同，才可固定*/
+        margin-top: -450px;
+        margin-left: -450px;
+        display: flex;
+        flex-direction: column; /* 让子元素垂直排列 */
+        
+        
+        gap: 15px;
+        transform: rotate(90deg); /* 旋转90度 */
+        position: absolute;
+        
+    }
+    .link a{
+        text-decoration: none; /* 去除下划线 */
+        color: inherit; /* 继承父元素的颜色 */
+        text-align: center;/*文字與外框置中*/
+
+        flex: 1;
+        width: 700px;/*調整長度*/
+
+        font-size: 14px;
+        letter-spacing: 4px;/*字體間距*/
+        line-height: 25px;/*行高，可以調整外框高度*/
+        font-family: var(--main-font);
+        font-weight: var(--main-font-weight);
+        
+        
+        border-radius: 33px;
+        border: 1px solid #000;
+    }
+    .link a:nth-child(2) {
+        margin-left: 150px;
+    }
+    .link a:nth-child(3) {
+        margin-left: 300px;
+    }
+    /*連結 結束*/
+    
+
+    /*自我介紹 開始*/
+    .introduction{
+        width: 62%;
+        margin-top: 200px;
+        margin-left: 45%;
+        margin-bottom: 200px;
+
+        font-size: 12px;
+        font-family: var(--main-font);
+        font-weight: var(--main-font-weight);
+        letter-spacing: 2px;
+    }
+    .introduction p{
+        margin-bottom: 50px;
+    }
+    .learn-more{
+        width: 125px;
+        height: 40px;
+        
+        text-decoration: none; /* 无下划线 */
+        cursor: pointer; /* 鼠标指针样式 */
+
+        background-color: white; 
+        color: black;
+        border: 1px solid #000;
+        padding: 10px; /* 根据需要调整内边距 */
+        padding-left: 20px;/* 根据需要调整内边距 */
+        padding-right: 20px;/* 根据需要调整内边距 */
+        border-radius: 20px;
+
+        font-size: 12px;
+        font-family: var(--main-font);
+        font-weight: var(--main-font-weight);
+        letter-spacing: 2px;
+        line-height: 20px;
+        
+    }
+    .learn-more:hover {/* 悬停时背景色变色 */
+        color: white;
+        background-color: black;
+    }
+    /*自我介紹 結束*/
+
+
+    .footericon{
+        width: 80%;
+
+        margin-left: 10%;
+    }
+    .footerimg{
+        display: none;
+    }
+    footer {
+        width: 100%;
+        height: 450px;
+        clear: both;
+
+        color: white;
+        background-color: black;
+    }
+    footer p {
+        width: 70%;
+        margin-top: 0;
+        margin-left: 15%;
+        margin-right: 15%;
+        
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 2px; /* 調整文字間距 */
+    }
+    footer p.connection {
+        width: 70%;
+        padding-top: 70px;
+        
+        font-size: 13px;
+        line-height: 160%;
+    }
+    footer p.Copyright {
+        margin-top: 50px;
+    }
+}

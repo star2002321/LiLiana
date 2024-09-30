@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+/*Import External CSS*/
+@import url(mobile.css);
+@import url(desktop.css);
+
+:root {
+    --main-font: 'Inika', serif;
+    --main-font-weight: 400;
+    
+    --secondary-font: 'Roboto Slab', sans-serif;
+    --tertiary-font: 'Inika', sans-serif;
+    --forty-font: ;
+}
+
+* {box-sizing: border-box;}
+/*清除原始瀏覽器格式*/
+
+body{
+    margin: 0; padding: 0;
+
+    background-image: url('../img/background.jpg');/*放置背景圖片*/
+    background-size: cover;/*背景圖片大小 封面*/
+    background-repeat: no-repeat;/*背景圖片 不重複出現*/
+    background-position: center center;/*背景位置 置中*/
+    background-position-y: 0px;/*讓背景圖片置頂*/
+}
+
+.content {
+    width: 80%;
+    margin: 10%;
+
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+}
+footer {
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+}
